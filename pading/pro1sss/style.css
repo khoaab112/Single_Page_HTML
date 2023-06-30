@@ -30,9 +30,9 @@ body {
 body.dark {
     --body-color: #18191a;
     --sidebar-color: #242526;
-    --primary-color: #3a3b3c;
+    --primary-color: #bbdbe5;
     --primary-color-light: #3a3b3c;
-    --toggle-color: #fff;
+    --toggle-color: #bbdbe5;
     --text-color: #ccc;
     --title-menu-color: #fffdfb9c;
 }
@@ -380,8 +380,18 @@ body.dark .home .text {
 }
 
 .submenu {
-    display: none;
+    /* display: none;    */
+
+    overflow: hidden;  
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
+
 }
+
+/* .submenu.show{
+    opacity: 1;
+} */
 
 .submenu_item .arrow-left {
     position: absolute;
@@ -395,7 +405,9 @@ body.dark .home .text {
 }
 
 .show_submenu~.submenu {
-    display: block;
+    height: auto; opacity: 1;
+    transition: height 0ms 0ms, opacity 600ms 0ms;
+    
 }
 
 .show_submenu .arrow-left {
