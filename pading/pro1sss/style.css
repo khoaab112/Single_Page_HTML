@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
 }
 
 :root {
+    --title-menu-color:#2626116e;
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
     --primary-color: #1707c4;
@@ -24,12 +26,6 @@ body {
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
-
-::selection {
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
 body.dark {
     --body-color: #18191a;
     --sidebar-color: #242526;
@@ -37,6 +33,11 @@ body.dark {
     --primary-color-light: #3a3b3c;
     --toggle-color: #fff;
     --text-color: #ccc;
+    --title-menu-color:#fffdfb9c;
+}
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 
@@ -64,7 +65,7 @@ body.dark {
 .sidebar li {
     height: 50px;
     list-style: none;
-    display: flex;
+    display: initial;
     align-items: center;
     margin-top: 10px;
 }
@@ -117,6 +118,8 @@ body.dark {
 .sidebar header .logo-text {
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
+    user-select: none;
 }
 
 header .image-text .admin-name {
@@ -188,7 +191,11 @@ body.dark .sidebar header .toggle {
 }
 
 .sidebar li a:hover {
-    background-color: var(--primary-color);
+    background-color: rgb(163, 217, 225, 0.6)
+}
+
+.sidebar li .submenu_item:hover {
+    background-color: #98EECC;
 }
 
 .sidebar li a:hover .icon,
@@ -270,12 +277,12 @@ body.dark .home .text {
 
 .list-menu {
     background-color: var(--white-color);
-    width: 260px;
-    position: fixed;
+    /* width: 260px; */
+    /* position: fixed; */
     top: 0;
     left: 0;
     height: 100%;
-    padding: 80px 20px;
+    padding: 5px 20px;
     z-index: 100;
     overflow-y: scroll;
     box-shadow: 0 0 1px var(--grey-color-light);
@@ -295,21 +302,6 @@ body.dark .home .text {
     position: relative;
 }
 
-.menu_title {
-    margin: 15px 0;
-    padding: 0 20px;
-    font-size: 18px;
-}
-
-.list-menu.close .menu_title {
-    padding: 6px 30px;
-}
-
-.menu_title::before {
-    color: var(--grey-color);
-    white-space: nowrap;
-}
-
 .menu_dahsboard::before {
     content: "Dashboard";
 }
@@ -320,15 +312,6 @@ body.dark .home .text {
 
 .menu_setting::before {
     content: "Setting";
-}
-
-.list-menu.close .menu_title::before {
-    content: "";
-    position: absolute;
-    height: 2px;
-    width: 18px;
-    border-radius: 12px;
-    background: var(--grey-color-light);
 }
 
 .menu_items {
@@ -358,14 +341,20 @@ body.dark .home .text {
     background: var(--blue-color);
 }
 
+.list-menu .menu_content ul li div span:hover {
+    /* background-color: red; */
+    color: var(--white-color);
+    background: var(--blue-color);
+}
+
 .list-menu .nav_link {
-    display: flex;
+    display: grid;
     align-items: center;
     width: 100%;
-    padding: 4px 15px;
+    padding: 10px 45px;
     border-radius: 8px;
     text-decoration: none;
-    color: var(--grey-color);
+    color: var(--text-color);
     white-space: nowrap;
 }
 
@@ -384,6 +373,8 @@ body.dark .home .text {
 
 .submenu_item {
     cursor: pointer;
+    font-weight: bold ;
+    font-size: 1rem;
 }
 
 .submenu {
@@ -410,7 +401,9 @@ body.dark .home .text {
 }
 
 .submenu .sublink {
-    padding: 15px 15px 15px 52px;
+    padding: 7px 0px 7px 55px;
+    display: block;
+    font-size: 0.9em;
 }
 
 .bottom_content {
@@ -457,6 +450,11 @@ body.dark .home .text {
     display: none;
 }
 
+.menu-title-sidebar {
+    color: var(--title-menu-color);
+    user-select: none;
+    text-decoration: underline;
+}
 
 /*  */
 
@@ -467,6 +465,7 @@ body.dark .home .text {
     .sidebars.close {
         left: -100%;
     }
+
     .sidebars.close .bottom_content {
         left: -100%;
     }

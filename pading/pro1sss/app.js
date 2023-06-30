@@ -1,15 +1,24 @@
 const body = document.querySelector('body'),
     sidebar = body.querySelector('nav'),
     toggle = body.querySelector('#toggle'),
-    // searchBtn = body.querySelector(".search-box"),
-    // modeSwitch = body.querySelector(".toggle-switch"),
+    btnDark = body.querySelector('.btn-dark'),
     modeText = body.querySelector(".mode-text");
-
+const titleMenu = document.querySelectorAll('.menu-title-sidebar');
 
 toggle.addEventListener("click", () => {
     sidebar.classList.toggle("close");
+    for (var value of titleMenu) {
+        if (value.style.display === "block") {
+            value.style.display = "none";
+        }
+        else
+            value.style.display = "block";
+    }
 })
+btnDark.addEventListener("click", () => {
+    body.classList.toggle("dark");
 
+})
 
 //
 const listMenu = document.querySelector(".list-menu");
