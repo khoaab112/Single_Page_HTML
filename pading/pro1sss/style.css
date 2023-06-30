@@ -8,7 +8,7 @@
 }
 
 :root {
-    --title-menu-color:#2626116e;
+    --title-menu-color: #2626116e;
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
     --primary-color: #1707c4;
@@ -26,6 +26,7 @@ body {
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
+
 body.dark {
     --body-color: #18191a;
     --sidebar-color: #242526;
@@ -33,8 +34,9 @@ body.dark {
     --primary-color-light: #3a3b3c;
     --toggle-color: #fff;
     --text-color: #ccc;
-    --title-menu-color:#fffdfb9c;
+    --title-menu-color: #fffdfb9c;
 }
+
 ::selection {
     background-color: var(--primary-color);
     color: #fff;
@@ -373,7 +375,7 @@ body.dark .home .text {
 
 .submenu_item {
     cursor: pointer;
-    font-weight: bold ;
+    font-weight: bold;
     font-size: 1rem;
 }
 
@@ -456,8 +458,49 @@ body.dark .home .text {
     text-decoration: underline;
 }
 
-/*  */
+/* footer*/
+#back-to-top {
+    display: inline-block;
+    color: red;
+    background-color: #FAF0E4;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 80px;
+    right: 45px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    border: none !important;
+}
 
+#back-to-top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#back-to-top:hover {
+    cursor: pointer;
+    background-color: #9BCDD2;
+}
+
+#back-to-top:active {
+    background-color: #A2CDB0;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
 
 /* sidebars */
 

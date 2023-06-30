@@ -49,3 +49,19 @@ if (window.innerWidth < 768) {
 } else {
     listMenu.classList.remove("close");
 }
+//footer back-on-top
+//nó hoạt động khi cuộn xuống 300px
+var btnOnTop = $('#back-to-top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btnOnTop.addClass('show');
+  } else {
+    btnOnTop.removeClass('show');
+  }
+});
+
+btnOnTop.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
