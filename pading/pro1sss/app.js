@@ -8,11 +8,11 @@ const titleMenu = document.querySelectorAll('.menu-title-sidebar');
 toggle.addEventListener("click", () => {
     sidebar.classList.toggle("close");
     for (var value of titleMenu) {
-        if (value.style.display === "block") {
-            value.style.display = "none";
-        }
-        else
-            value.style.display = "block";
+        if (value.classList[1] === "show-titles") {
+            value.classList.remove('show-titles');
+        } else
+            value.classList.add('show-titles');
+
     }
 })
 btnDark.addEventListener("click", () => {
@@ -52,7 +52,7 @@ if (window.innerWidth < 768) {
 //nó hoạt động khi cuộn xuống 300px
 var btnOnTop = $('#back-to-top');
 
-$(window).scroll(function () {
+$(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
         btnOnTop.addClass('show');
     } else {
@@ -60,7 +60,7 @@ $(window).scroll(function () {
     }
 });
 
-btnOnTop.on('click', function (e) {
+btnOnTop.on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({ scrollTop: 0 }, '300');
 });
