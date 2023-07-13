@@ -5,7 +5,7 @@
 }
 
 .ftco-section {
-    padding: 7em 0;
+    padding-top: 4rem;
 }
 
 .login-wrap {
@@ -20,6 +20,12 @@
 
 .login-wrap .social {
     width: 100%;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .login-wrap .social a {
@@ -150,6 +156,7 @@ button:not(:disabled),
     box-shadow: none !important;
     font-size: 15px;
     text-transform: uppercase;
+    width: 50%;
 }
 
 .checkbox-primary {
@@ -312,4 +319,24 @@ a:hover {
     outline: none;
     box-shadow: none;
     border-color: rgba(255, 255, 255, .4);
+}
+
+.form-control::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+button.btn-service {
+    background-color: #ff000000;
+    border: none;
+    transition: transform 250ms;
+}
+
+img.img-service {
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+button.btn-service:hover {
+    transform: translateY(-10px);
 }
