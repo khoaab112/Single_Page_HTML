@@ -6,6 +6,8 @@
 
 .ftco-section {
     padding-top: 4rem;
+    position: relative;
+    z-index: 1;
 }
 
 .login-wrap {
@@ -42,44 +44,7 @@
     border-color: #000;
 }
 
-*::before,
-*::after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-article,
-aside,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section {
-    display: block;
-}
-
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-}
-
-body:after {
+.img:after {
     position: absolute;
     top: 0;
     left: 0;
@@ -88,7 +53,7 @@ body:after {
     content: '';
     background: #000;
     opacity: .3;
-    z-index: -1;
+    z-index: 0;
 }
 
 .form-group {
@@ -127,13 +92,6 @@ input {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     color: rgba(255, 255, 255, 0.9);
-}
-
-*,
-*::before,
-*::after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 .btn.btn-primary {
