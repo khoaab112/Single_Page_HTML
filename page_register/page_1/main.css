@@ -225,7 +225,6 @@ iframe {
 }
 
 .wrap-login100 {
-  width: 960px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -234,10 +233,11 @@ iframe {
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
-  padding: 177px 130px 33px 95px;
+  /* padding: 177px 130px 33px 95px; */
+  padding: 10px 120px 0px 120px
 }
 
 /*------------------------------------------------------------------
@@ -265,7 +265,8 @@ iframe {
 
   width: 100%;
   display: block;
-  padding-bottom: 54px;
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
 
 
@@ -376,8 +377,7 @@ iframe {
   line-height: 1.5;
   color: #fff;
   text-transform: uppercase;
-
-  width: 100%;
+  width: 70%;
   height: 50px;
   border-radius: 25px;
   background: #3db5ab;
@@ -400,7 +400,12 @@ iframe {
   background: #99e60a;
 }
 
-
+.title-page-register {
+  position: relative;
+  /* top: -75px; */
+  text-align: center;
+  font-weight: bold;
+}
 
 /*------------------------------------------------------------------
 [ Responsive ]*/
@@ -409,7 +414,7 @@ iframe {
 
 @media (max-width: 992px) {
   .wrap-login100 {
-    padding: 177px 90px 33px 85px;
+    /* padding: 177px 90px 33px 85px; */
   }
 
   .login100-pic {
@@ -417,7 +422,7 @@ iframe {
   }
 
   .login100-form {
-    width: 50%;
+    width: 290px;
   }
 }
 
@@ -433,6 +438,17 @@ iframe {
   .login100-form {
     width: 100%;
   }
+  .title-page-register {
+    position: relative;
+    top: -75px;
+    text-align: center;
+    font-weight: bold;
+}
+.login100-form-title {
+
+  padding-top: 0px;
+  margin-bottom: 2rem;
+}
 }
 
 @media (max-width: 576px) {
@@ -503,9 +519,19 @@ iframe {
 }
 
 .p-t-12 {
-  padding-top: 12px;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
+.note-create {
+  font-size: small;
+  font-style: italic;
+  color: red;
+  line-height: 2.4rem;
+  text-decoration: underline;
+}
 .p-t-136 {
   padding-top: 136px;
 }
