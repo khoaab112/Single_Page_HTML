@@ -4,9 +4,9 @@
     background-position: center center;
 }
 
-.ftco-section {
+/* .ftco-section {
     padding-top: 4rem;
-}
+} */
 
 .login-wrap {
     position: relative;
@@ -26,6 +26,7 @@
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    padding-bottom: 2rem !important;
 }
 
 .login-wrap .social a {
@@ -80,7 +81,7 @@ body {
 }
 
 body:after {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -89,6 +90,7 @@ body:after {
     background: #000;
     opacity: .3;
     z-index: -1;
+    height: auto;
 }
 
 .form-group {
@@ -105,7 +107,8 @@ body:after {
     height: 50px;
     color: white !important;
     border: 1px solid transparent;
-    background: rgba(255, 255, 255, 0.08);
+    /* background: rgba(255, 255, 255, 0.08); */
+    background: #dfc3b3b5;
     border-radius: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -139,7 +142,8 @@ input {
 .btn.btn-primary {
     background: #fbceb5 !important;
     border: 1px solid #fbceb5 !important;
-    color: #000 !important;
+    color: white !important;
+    font-weight: bold;
 }
 
 button:not(:disabled),
@@ -301,21 +305,23 @@ a:hover {
     height: 50px;
     color: rgba(255, 255, 255, 1) !important;
     border: 1px solid transparent;
-    background: rgba(255, 255, 255, .08);
+    /* background: rgba(255, 255, 255, .08); */
+    background: #dfc3b3b5;
     border-radius: 40px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .form-control:hover {
-    background: transparent;
+    /* background: transparent; */
+    background-color: #21252987;
     outline: none;
     box-shadow: none;
     border-color: rgba(255, 255, 255, .4);
 }
 
 .form-control:focus {
-    background: transparent;
+    background: #21252987;
     outline: none;
     box-shadow: none;
     border-color: rgba(255, 255, 255, .4);
@@ -343,4 +349,103 @@ button.btn-service:hover {
 
 .heading-section {
     color: white;
+}
+input.last-name{
+    width: 40%;
+}
+input.name{
+  width: 40%;
+    float: right;
+    flex: auto;
+    margin-left: 1rem;
+}
+/*  */
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 1rem;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #0dcaf0;;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+/* Ẩn nút tăng giảm */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.no-spinner {
+  /* Firefox */
+  -moz-appearance: textfield;
+}
+.send-code{
+    width: 40%;
+    margin-left: 3rem;
+    background-color: #8CC0DE;
+
+}
+.input-code-confirm{
+    width: 100%;
+    background-color: #6c757db8 !important;
 }

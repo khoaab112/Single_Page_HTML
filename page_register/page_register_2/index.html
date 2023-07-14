@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="img js-fullheight" style="background-image: url(images/bg_4.gif);">
+<body class="img js-fullheight" style="background-image: url(images/bg_2.jpg);">
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6 text-center mb-5">
+                <div class="col-md-6 text-center mb-3 mt-5">
                     <h2 class="heading-section">Đăng ký</h2>
                 </div>
             </div>
@@ -24,14 +24,16 @@
                     <div class="login-wrap p-0">
                         <h3 class="mb-4 text-center">Cung cấp các thông tin :</h3>
                         <form action="#" class="signin-form">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="họ" autocomplete="on" name="lastNameRegister" required>
+                            <div class="form-group d-flex">
+                                <input type="text" class="form-control last-name" placeholder="họ" autocomplete="on" name="lastNameRegister" required>
+                                <input type="text" class="form-control name" placeholder="tên" autocomplete="on" name="nameRegister" required>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="tên" autocomplete="on" name="nameRegister" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="range" class="form-control" placeholder="change" autocomplete="on" name="change" required>
+                            <div class="form-group d-flex">
+                                <p>Đăng ký bằng số điện thoại</p>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>                                    
+                                  </label>                                 
                             </div>
                             <div class="form-group">
                                 <input type="number" class="form-control" placeholder="số điện thoại" autocomplete="on" name="phoneNumberRegister" required>
@@ -40,23 +42,24 @@
                                 <input type="text" class="form-control" placeholder="email" autocomplete="on" name="emailRegister" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Tên đăng nhập" autocomplete="on" name="emailRegister" required>
+                                <input type="text" class="form-control" placeholder="Tên đăng nhập" autocomplete="on" name="emailRegister" required >
                             </div>
                             <div class="form-group">
-                                <input id="password-field" type="password" class="form-control" placeholder="Mật khẩu" autocomplete="off" required>
+                                <input id="password-register" type="password" class="form-control" placeholder="Mật khẩu" autocomplete="off" required>
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
                             <div class="form-group">
-                                <input id="password-field" type="password" class="form-control" placeholder="Mật khẩu xác thực" autocomplete="off" required>
+                                <input id="password-confirm" type="password" class="form-control" placeholder="Xác thực lại mật khẩu" autocomplete="off" required>
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="mã xác thực gửi về" autocomplete="on" name="nameRegister" required>
+                            <div class="form-group d-flex">
+                                <input type="text" class="form-control input-code-confirm" placeholder="mã xác thực gửi về" autocomplete="on" name="nameRegister" required>
+                                <input type="button" class="form-control send-code" value="Gửi mã" required>
                             </div>
                             <div class="form-group text-center">
-                                <button type="submit" class="form-control btn btn-primary submit px-3">Đăng nhập</button>
+                                <button type="submit" class="form-control btn btn-primary submit px-3 mt-2">Xác nhận</button>
                             </div>
-                            <div class="form-group d-md-flex">
+                            <!-- <div class="form-group d-md-flex">
                                 <div class="w-50">
                                     <label class="checkbox-wrap checkbox-primary">Nhớ mật khẩu
                                         <input type="checkbox" checked>
@@ -66,18 +69,17 @@
                                 <div class="w-50 text-md-right">
                                     <a href="#" style="color: #fff">Quên mật khẩu ?</a>
                                 </div>
-                            </div>
+                            </div> -->
                         </form>
                         <div class="text-center">
-                            <a href="#" style="color: #fff">Bạn chưa có tài khoản</a>
-                            <p class="pt-2">Hoặc</p>
-                            <p class="w-100 text-center">&mdash; Đăng nhập với các khác &mdash;</p>
+                            <p class="mt-2">Hoặc</p>
+                            <p class="w-100 text-center fw-bold">&mdash; Đăng ký với cách khác &mdash;</p>
                         </div>
                         <div class="social text-center">
                             <!-- <a href="#" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span>
                                 Facebook</a> -->
                             <button class="btn-service"><img src="images/google.png" alt="google" draggable="false" class="img-service" ></img></button>
-                            <button class="btn-service"><img src="images/google.png" alt="google" draggable="false" class="img-service" ></img></button>
+                            <button class="btn-service"><img src="images/facebook.png" alt="google" draggable="false" class="img-service" ></img></button>
                             <button class="btn-service"><img src="images/google.png" alt="google" draggable="false" class="img-service" ></img></button>
 
                             <!-- <a href="#" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span>
