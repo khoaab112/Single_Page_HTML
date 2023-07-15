@@ -1,22 +1,22 @@
-"use strict";
+// "use strict";
 
-var fullHeight = function() {
-    var fullheightElements = document.querySelectorAll('.js-fullheight');
-    var resizeHandler = function() {
-        fullheightElements.forEach(function(element) {
-            element.style.height = window.innerHeight + 'px';
-        });
-    };
+// var fullHeight = function() {
+//     var fullheightElements = document.querySelectorAll('.js-fullheight');
+//     var resizeHandler = function() {
+//         fullheightElements.forEach(function(element) {
+//             element.style.height = window.innerHeight + 'px';
+//         });
+//     };
 
-    resizeHandler();
-    window.addEventListener('resize', resizeHandler);
-};
+//     resizeHandler();
+//     window.addEventListener('resize', resizeHandler);
+// };
 
-fullHeight();
+// fullHeight();
 
-addEventListener('touchstart', this.callPassedFuntion, {
-    passive: false
-});
+// addEventListener('touchstart', this.callPassedFuntion, {
+//     passive: false
+// });
 
 
 

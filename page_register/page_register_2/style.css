@@ -2,11 +2,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    height: auto !important;
 }
-
-/* .ftco-section {
-    padding-top: 4rem;
-} */
 
 .login-wrap {
     position: relative;
@@ -69,28 +66,9 @@ section {
     display: block;
 }
 
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-}
-
-body:after {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    background: #000;
-    opacity: .3;
-    z-index: -1;
-    height: auto;
+div.content-register {
+    z-index: 1;
+    position: relative;
 }
 
 .form-group {
@@ -243,6 +221,13 @@ a {
     }
 }
 
+.form-control:valid {
+    background-color: #21252987;
+    outline: none;
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, .4);
+}
+
 .form-control::-ms-expand {
     background-color: transparent;
     border: 0;
@@ -333,9 +318,11 @@ a:hover {
 }
 
 button.btn-service {
-    background-color: #ff000000;
+    background-color: #fff;
     border: none;
     transition: transform 250ms;
+    padding: 2px 3px;
+    border-radius: 16px;
 }
 
 img.img-service {
@@ -350,34 +337,45 @@ button.btn-service:hover {
 .heading-section {
     color: white;
 }
-input.last-name{
+
+input.last-name {
     width: 40%;
 }
-input.name{
-  width: 40%;
+
+input.name {
+    width: 40%;
     float: right;
     flex: auto;
     margin-left: 1rem;
 }
+
+
 /*  */
+
+
 /* The switch - the box around the slider */
+
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
     margin-left: 1rem;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+
+/* The slider */
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -387,9 +385,9 @@ input.name{
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -399,53 +397,74 @@ input.name{
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #0dcaf0;;
-  }
-  
-  input:focus + .slider {
+}
+
+input:checked+.slider {
+    background-color: #0dcaf0;
+    ;
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+
+.slider.round:before {
     border-radius: 50%;
-  }
-  
+}
+
+
 /* Ẩn nút tăng giảm */
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 input[type="number"] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 .no-spinner {
-  /* Firefox */
-  -moz-appearance: textfield;
+    /* Firefox */
+    -moz-appearance: textfield;
 }
-.send-code{
+
+.send-code {
     width: 40%;
     margin-left: 3rem;
     background-color: #8CC0DE;
-
 }
-.input-code-confirm{
+
+.send-code:active {
+    background: #11da5e;
+}
+
+.send-code:valid {
+    background: #11da5e !important;
+    outline: none;
+    box-shadow: none;
+    border-color: rgba(255, 255, 255, .4);
+}
+
+.input-code-confirm {
     width: 100%;
     background-color: #6c757db8 !important;
+}
+
+.block-copy {
+    user-select: none;
 }
