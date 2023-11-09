@@ -1,0 +1,10 @@
+header {
+    background: linear-gradient(163deg, rgba(241, 228, 189, 0.44231459673713236) 54%, rgba(0, 212, 255, 0.34427538105085786) 100%);
+    display: block;
+    padding: 0 8rem 0 8rem;
+}
+
+header a#logo img {
+    width: 6rem;
+    height: 6rem;
+}
