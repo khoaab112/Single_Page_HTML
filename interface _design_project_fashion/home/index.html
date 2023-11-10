@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -13,30 +15,116 @@
 
 <body>
     <header>
-        <div>
-            <a href="#" id="logo"> <img src="../imgs/logoAdmin.png" alt="logo">
-            </a>
-            <input type="text" placeholder="Tìm kiếm">
-        </div>
-        <div>
-            <div>
-                <span>
-                        Gần bạn
-                    </span>
-                <span>
-                        Số điện thoại
-                    </span>
+        <div id="header">
+            <div class="box-logo">
+                <a href="#" id="logo"> <img src="../imgs/logoAdmin.png" alt="logo">
+                </a>
+                <form class="frm-search">
+                    <input type="text" placeholder="Tìm kiếm" class="search-home">
+                    <button class="btn-search btn" type="button"><i class="fa-solid fa-magnifying-glass icon-search"></i></button>
+                </form>
             </div>
-            <div>
-                <button>Đăng nhập</button>
-                <button>Đăng ký</button>
-                <button>Giỏ hàng</button>
+            <div class="box-actions">
+                <div class="contact">
+                    <p>
+                        <i class="fa-solid fa-location-dot icon"></i><span>Gần bạn</span>
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone icon"></i><span>095.555.666</span>
+                    </p>
+                </div>
+                <div class="list-actions">
+                    <button class="btn-action btn-login">Đăng nhập</button>
+                    <button class="btn-action btn-register">Đăng ký</button>
+                    <button class="btn-basket"><i class="fa-solid fa-cart-shopping icon"></i><span class="item-number pulse" >90</span></button>
+                </div>
             </div>
         </div>
-        <nav></nav>
+        <!-- nav -->
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar  ftco-navbar-light" id="ftco-navbar">
+            <div class="container-fluid">
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span> Menu
+              </button> -->
+                <button class="navbar-toggler" type="button" onclick="clickMunuMb()">
+                <span class="fa fa-bars"></span> <span class="title-menu">Menu</span>
+              </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item active"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Page</a>
+                            <div class="dropdown-menu show" aria-labelledby="dropdown04">
+                                <a class="dropdown-item" href="#">Page 1</a>
+                                <a class="dropdown-item" href="#">Page 2</a>
+                                <a class="dropdown-item" href="#">Page 3</a>
+                                <a class="dropdown-item" href="#">Page 4</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Work</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end nav -->
     </header>
     <main>
+        <section id="slide">
+            <!-- chỉnh time chạy của slide data-bs-interval -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2500" keyboard=true>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active item">
+                        <img src="https://i.pinimg.com/236x/ec/f4/00/ecf4003d9a0e8095340a791928d1b15f.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item item">
+                        <img src="https://i.pinimg.com/236x/95/a4/1d/95a41dcbb1502eaf497bd10214612902.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item item">
+                        <img src="https://i.pinimg.com/236x/df/e4/46/dfe446670458db971d6a86e5e0700db1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev btn-control" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next btn-control" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section id="gif">
+            <div class="container">
+                <div class="list-gif">
+                    <div class="item"><img src="../imgs/img1.jpg" alt=""><span>Khuyến mãi Grab this convenient and free menu with social icons template that can easily work for your page’s header section. There’s also a search bar and a dropdown for you to benefit from.</span></div>
+                    <div class="item"><img src="../imgs/img1.jpg" alt=""><span>Khuyến mãi</span></div>
+                    <div class="item"><img src="../imgs/img1.jpg" alt=""><span>Khuyến mãi</span></div>
+                    <div class="item"><img src="../imgs/img1.jpg" alt=""><span>Khuyến mãi</span></div>
+                    <div class="item"><img src="../imgs/img1.jpg" alt=""><span>Khuyến mãi</span></div>
+                    <div class="item"><img src="../imgs/img1.jpg" alt=""><span>Khuyến mãi</span></div>
+                    <div class="item"><img src="../imgs/img1.jpg" alt=""><span>Khuyến mãi</span></div>
+                    <div class="item"><img src="../imgs/img1.jpg" alt=""><span>Khuyến mãi</span></div>
 
+                </div>
+            </div>
+        </section>
+        <section id="flash-sale">
+            <div class="container">
+                <div class="title-section flash-sale">
+                    <div class="time-title">
+                        <h4>FLASH SALE</h4><span>1</span>:<span>1</span>:<span>1</span></div>
+                    <span class="more">Xem thêm &ensp; <i class="fa-solid fa-angles-right" style="color: blue;"></i></span>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
 
