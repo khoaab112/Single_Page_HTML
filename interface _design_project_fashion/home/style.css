@@ -209,6 +209,39 @@ button.btn-basket .icon:hover {
 }
 
 
+/* nav mobile*/
+
+.more-mobile a {
+    display: block;
+    margin-left: 1rem;
+    color: white;
+}
+
+.more-mobile {
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    display: none;
+}
+
+.more-mobile div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-mobile div>.icon {
+    margin-right: 1rem;
+}
+
+.sub-menu-mobile {
+    border: none;
+    background: #967b59;
+}
+
+.sub-menu-mobile>a {
+    width: 90%;
+}
+
+
 /* nav */
 
 @media (max-width: 991.98px) {
@@ -409,6 +442,9 @@ button.btn-basket .icon:hover {
         bottom: 0;
         background-color: white;
     }
+    .more-mobile {
+        display: block;
+    }
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item.cta>a {
@@ -533,14 +569,31 @@ section#gif {
     margin-bottom: 1rem;
 }
 
-#gif .item:hover {
+#gif .item img:hover {
     animation: pulse 2s infinite;
+}
+
+#gif .item a {
+    display: -webkit-box;
+    max-height: 3.2rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    line-height: 1.6rem;
+    color: black;
+    font-weight: 600;
+}
+
+#gif .item a:hover {
+    color: orange;
 }
 
 @keyframes pulse {
     0% {
         transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgb(235 79 79 / 70%);
+        box-shadow: 0 0 0 0 rgb(235 150 63 / 70%);
     }
     70% {
         transform: scale(1);
@@ -581,6 +634,167 @@ section#gif {
     float: left;
 }
 
+
+/* flash-sale */
+
 #flash-sale .more {
     float: right;
 }
+
+
+/* card-product */
+
+.card-product {
+    width: 13rem;
+    height: 28rem;
+    position: relative;
+}
+
+.card-product>a .img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* .card-product img:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transition: all .2s ease-out;
+} */
+
+.img-product {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-product:hover img {
+    opacity: 0.3;
+}
+
+.img-product:hover .middle {
+    opacity: 1;
+}
+
+.detail-product {
+    background-color: var(--bs-yellow);
+    color: white;
+    font-size: 16px;
+    padding: 2px 31px;
+    border-radius: 10px;
+}
+
+.detail-product:active {
+    background-color: #FF8400;
+}
+
+.title-section.flash-sale {
+    padding-bottom: 4rem;
+}
+
+.card-product>a {
+    position: relative;
+    height: 80%;
+}
+
+.card-product .number-product {
+    position: absolute;
+    top: 0;
+    background: #212529b5;
+    border-radius: 5px;
+    padding: 1px 4px;
+    color: white;
+}
+
+.card-product .promotional-products {
+    position: absolute;
+    width: 5rem;
+    height: 7rem;
+    bottom: 0;
+}
+
+.card-product>a .sale {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: red;
+    padding: 1px 4px;
+    border-radius: 5px 0px;
+    color: white;
+}
+
+.promotional-products img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 0px 5px;
+}
+
+.card-product .title-product {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.card-product .price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-product .sale-price {
+    color: red;
+    font-weight: 600;
+}
+
+.card-product .face-value,
+.sale-price span.sale {
+    color: #000;
+    font-weight: bold;
+}
+
+.card-product .list-color {
+    display: inline-block;
+}
+
+
+/* chung */
+
+.title-section {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+section h4 {
+    text-transform: uppercase;
+}
+
+
+/* top-selling-item */
+
+#top-selling-item {
+    margin-top: 2rem;
+}
+
+
+/* footer */
