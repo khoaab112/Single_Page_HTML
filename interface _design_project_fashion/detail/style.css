@@ -1,0 +1,166 @@
+#action {
+    display: flex;
+    justify-content: space-between;
+}
+
+#action .quantity {
+    font-weight: bold;
+}
+
+.action {
+    display: flex;
+}
+
+.action .action-search {
+    position: relative;
+}
+
+.action #search {
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+    width: 16rem;
+    padding: 0 1rem;
+    height: 2rem;
+}
+
+.action .icon-search {
+    position: absolute;
+    right: 7px;
+    top: 8px;
+    color: #757575;
+}
+
+.action .icon-search:hover {
+    color: white;
+}
+
+input #search:hover,
+input #search:active,
+input #search:focus {
+    outline-width: 0;
+    outline: none;
+}
+
+.action .filter {
+    padding-left: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.action .filter:hover {
+    color: yellow;
+}
+
+.card-list-product {
+    width: 100%;
+    min-height: 5rem;
+    background-color: #F5F5F5;
+    margin-top: 1rem;
+}
+
+.filter .active {
+    background-color: #0d83fd !important;
+    border-radius: 10px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #0d83fd !important;
+    border-radius: 10px;
+}
+
+
+/* new */
+
+.new {
+    background-color: #F5F5F5;
+    min-height: 5rem;
+    margin-top: 2rem;
+}
+
+.new .title-section {
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+.card-new {
+    margin-bottom: 2rem;
+}
+
+.card-new img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-new .content {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 6;
+}
+
+.card-new .title-new {
+    font-weight: bold;
+}
+
+.new .space {
+    padding: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120%;
+    display: grid;
+    justify-items: stretch;
+    justify-content: center;
+}
+
+.new .space button {
+    border: none;
+    background-color: none;
+    color: black;
+    font-weight: bold;
+}
+
+.bounce {
+    animation: bounce 2s ease infinite;
+    height: 10rem;
+    padding-top: 1rem;
+    font-size: 120%;
+}
+
+@keyframes bounce {
+    70% {
+        transform: translateY(0%);
+    }
+    80% {
+        transform: translateY(-15%);
+    }
+    90% {
+        transform: translateY(0%);
+    }
+    95% {
+        transform: translateY(-7%);
+    }
+    97% {
+        transform: translateY(0%);
+    }
+    99% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 1200px) {
+    .card-new img,
+    .card-new h5,
+    .card-new .content {
+        padding: 1rem;
+    }
+}
