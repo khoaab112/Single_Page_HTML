@@ -772,7 +772,7 @@ section#gif {
     justify-content: flex-end;
 }
 
-.card-product .sale-price {
+pulseFooter .card-product .sale-price {
     color: red;
     font-weight: 600;
 }
