@@ -1,0 +1,216 @@
+/* mobile */
+
+button.btn-change-mobile {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    input.btn-change-mobile {
+        border: none;
+        width: 3rem;
+        height: 2rem;
+        display: block;
+    }
+}
+
+
+/* end */
+
+.list-btn {
+    margin-right: 2rem;
+    background: #D9D9D9;
+    min-width: 14rem;
+    max-width: 18rem;
+    align-items: center;
+    min-height: 50pc;
+}
+
+.list-btn button {
+    margin-top: 1rem;
+    width: 8rem;
+    font-weight: bold;
+}
+
+#v-pills-tabContent {
+    min-height: 50pc;
+    background-color: #D9D9D9;
+    width: 100%;
+}
+
+
+/* online */
+
+#v-pills-tabContent>div {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+}
+
+#v-pills-online .frm-connect {
+    display: flex;
+    justify-content: space-between;
+}
+
+#v-pills-online .frm-connect input {
+    width: 80%;
+    border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    height: 2.2rem;
+    padding: 0 1rem;
+}
+
+#v-pills-online .frm-connect button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background: #0d6efd;
+    color: white;
+}
+
+#v-pills-online .messaging-frame {
+    width: 100%;
+    height: 40rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+#v-pills-online .messaging-frame .input-message {
+    position: absolute;
+    bottom: 0.3rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#v-pills-online .messaging-frame>.contents {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#v-pills-online .messaging-frame .input-message span {
+    width: 30rem;
+    position: relative;
+}
+
+#v-pills-online .messaging-frame .input-message .icon {
+    position: absolute;
+    bottom: 34%;
+    left: 14px;
+    color: #00000094;
+}
+
+#v-pills-online .messaging-frame .input-message .icon:active {
+    color: black;
+}
+
+#v-pills-online .messaging-frame .input-message input {
+    width: 100%;
+    padding: 0.5rem 2rem;
+}
+
+#v-pills-online .messaging-frame .input-message button {
+    width: 6rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c757d;
+    color: white;
+}
+
+#v-pills-online .messaging-frame .contents .messages {
+    width: 100%;
+    height: 85%;
+    padding: 1rem;
+}
+
+#v-pills-online .messaging-frame .contents .mess {
+    background-color: #e9ecef;
+    height: 100%;
+    border: 1px solid #21252954;
+}
+
+.info-supporter {
+    display: flex;
+}
+
+.info-supporter>.avatar {
+    width: 3rem;
+    height: 3rem;
+}
+
+.info-supporter>.name {
+    margin-left: 1rem;
+}
+
+.info-supporter>.name>p {
+    font-weight: 100;
+    font-size: 80%;
+}
+
+.info-supporter>.avatar>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.respond-messages .respond,
+.reply-message .reply {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.respond-messages .respond .name {
+    color: red;
+}
+
+.mess .avatar {
+    width: 2rem;
+    height: 2rem;
+}
+
+.mess .avatar img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+#v-pills-online .messaging-frame .content {
+    width: 100%;
+    height: 100%;
+    margin-left: 0.5rem;
+}
+
+#v-pills-online .messaging-frame .name {
+    font-weight: bold;
+    font-size: 105%;
+}
+
+#v-pills-online .messaging-frame .message-wait,
+#v-pills-online .messaging-frame .message {
+    margin-left: 0.3rem;
+}
+
+.mess .respond,
+.mess .reply {
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+    display: flex;
+    max-width: 80%;
+}
+
+.reply {
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
+}
+
+.input-message button:hover {
+    box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
