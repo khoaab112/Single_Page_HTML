@@ -67,11 +67,11 @@ button.btn-change-mobile {
     #v-pills-tab {
         position: absolute;
         width: 100pc;
-        top: 9.5rem;
+        top: 8rem;
         box-shadow: 0 0 10px #85888C;
         margin: -50px 0 0 -50px;
-        padding: 50px;
-        padding-top: 125px;
+        padding: 10px;
+        padding-top: 0px;
         background-color: #F5F6FA;
         -webkit-font-smoothing: antialiased;
         transform-origin: 0% 0%;
@@ -128,14 +128,14 @@ hr.hr-user {
     width: 95%;
 }
 
-.card-info-user .percentage div.percentage100 {
+.percentage div.percentage100 {
     width: 100%;
     height: 0.8rem;
     background-color: #d9d9d9;
     border-radius: 15px;
 }
 
-.card-info-user .percentage div.percentage0 {
+.percentage div.percentage0 {
     width: 60%;
     padding: 0.4rem 0;
     background-color: #7cb3ff;
@@ -151,9 +151,280 @@ span.note-percentage {
 #v-pills-tabContent .title {
     font-weight: bold;
     font-size: 110%;
+    margin-top: 1rem;
 }
 
 
 /* thông tin người dùng */
 
 #v-pills-info-user {}
+
+#v-pills-info-user .col-xl-6.col-xs-12>div:not(.list-address) {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.list-address>div {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-address>div .icon:hover {
+    color: blue;
+}
+
+.list-address span {
+    font-weight: 100;
+}
+
+button.add-address {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    padding: 4px 5px;
+    border-radius: 50px;
+    display: grid;
+    align-content: center;
+    color: red;
+    border: 1px solid red;
+    background: none;
+}
+
+#v-pills-info-user .edit-data {
+    float: right;
+    border-radius: 5px;
+    background: #0d6efd;
+    color: white;
+    padding: 4px 6px;
+    border: none;
+}
+
+.rank-information img {
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    object-fit: cover;
+}
+
+.rank-information {
+    display: flex;
+    justify-content: space-between;
+    width: 14rem;
+    align-items: center;
+}
+
+.current-level {
+    color: red;
+}
+
+.percentage.detail {
+    width: 100%;
+}
+
+.percentage.detail strong {
+    float: right;
+    margin-top: 0.2rem;
+}
+
+
+/* đổi mật khẩu */
+
+
+/* v-pills-change-password */
+
+#v-pills-change-password form label {
+    font-weight: bold;
+}
+
+#v-pills-change-password form {
+    margin-left: 1rem;
+}
+
+#v-pills-change-password form label {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+#v-pills-change-password form label .icon {
+    position: absolute;
+    right: 15px;
+    top: 55%;
+}
+
+#v-pills-change-password form input {
+    margin: 1rem 0;
+    width: 100%;
+    padding: 5px 11px 5px 1rem;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+a.forgot-password {
+    color: blue;
+}
+
+#v-pills-change-password form .action {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#v-pills-change-password form .action button {
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+#v-pills-change-password form .action .reset {
+    background-color: #85888C;
+    color: white;
+}
+
+#v-pills-change-password form .action .comfirm {
+    background-color: #0d6efd;
+    color: white;
+}
+
+
+/* đặt hàng */
+
+
+/* chi tiết đơn hàng */
+
+section#detail-product button {
+    background-color: white;
+    width: 5rem;
+    border: none;
+    border-radius: 15px;
+}
+
+.col-xl-5.col-sm-12.right>div {
+    display: flex;
+    justify-content: space-between;
+    margin: 17px 1rem;
+}
+
+.col-xl-5.col-sm-12.right>div>span {
+    text-align: end;
+}
+
+
+/* table */
+
+table {
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    background: white;
+}
+
+th {
+    height: 50px;
+}
+
+tr:not(tr:last-child) {
+    border-bottom: 1px solid black;
+}
+
+tr:nth-last-child(2) {
+    background-color: #7cb3ff;
+    color: white;
+    font-weight: bold;
+}
+
+tr:last-child {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+th,
+tr {
+    text-align: left;
+}
+
+tr:nth-child(1) th {
+    text-align: center;
+}
+
+th:nth-child(1) {
+    text-align: center;
+}
+
+tr th:nth-child(2) {
+    text-align: center;
+}
+
+tr:not(tr:nth-child(1)) th:nth-child(3) {
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+tr:not(tr:nth-child(1)) th:nth-child(4) {
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+}
+
+tr>th>img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    padding: 1px;
+}
+
+
+/* end table */
+
+section#detail-product .note {
+    background-color: white;
+    min-height: 11rem;
+    width: 100%;
+}
+
+section#detail-product .list-button button {
+    border: none;
+    width: 6rem;
+    height: 3rem;
+    margin-right: 2rem;
+    font-size: 90%;
+}
+
+section#detail-product .list-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+section#detail-product .list-button button:nth-child(1) {
+    background-color: orange;
+    color: white;
+}
+
+section#detail-product .list-button button:nth-child(2) {
+    background-color: #0d6efd;
+    color: white;
+}
+
+section#detail-product .list-button {
+    margin-top: 1rem;
+}
+
+@media(max-width: 1200px) {
+    section#detail-product .list-button {
+        margin-top: 1rem;
+    }
+}
