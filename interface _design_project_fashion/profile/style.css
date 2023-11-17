@@ -1,0 +1,159 @@
+button:hover {
+    box-shadow: 1px 6px 13px -5px;
+    transform: scale(1.01);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.active-mb {
+    display: none;
+}
+
+button.btn-change-mobile {
+    display: none;
+}
+
+.list-btn {
+    margin-right: 2rem;
+    background: #EEF5FF;
+    min-width: 14rem;
+    max-width: 18rem;
+    align-items: center;
+    min-height: 50pc;
+}
+
+.list-btn button {
+    margin-top: 0.4rem;
+    width: 8rem;
+    font-weight: bold;
+}
+
+#v-pills-tabContent {
+    min-height: 50pc;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+@media(max-width: 700px) {
+    input.btn-change-mobile {
+        border: none;
+        width: 3rem;
+        height: 2rem;
+        display: block;
+        z-index: 2;
+        opacity: 0;
+    }
+    .active-mb {
+        width: 3rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .active-mb .icon {
+        position: absolute;
+    }
+    .list-btn {
+        min-height: 36pc;
+    }
+    #v-pills-tab {
+        position: absolute;
+        width: 100pc;
+        top: 9.5rem;
+        box-shadow: 0 0 10px #85888C;
+        margin: -50px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        background-color: #F5F6FA;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        z-index: 1;
+    }
+    .show-tap {
+        transform: none !important;
+    }
+}
+
+
+/*  css riêng */
+
+hr.hr-user {
+    width: 80%;
+    color: black;
+}
+
+.card-info-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-info-user .avatar-user {
+    width: 6rem;
+    height: 6rem;
+    margin-top: 1rem;
+}
+
+.card-info-user .avatar-user img {
+    border-radius: 50px;
+}
+
+.card-info-user img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.card-info-user .img-rank {
+    width: 3rem;
+    height: 3rem;
+}
+
+.card-info-user .rank-name {
+    color: var(--bs-orange);
+}
+
+.card-info-user .percentage {
+    width: 95%;
+}
+
+.card-info-user .percentage div.percentage100 {
+    width: 100%;
+    height: 0.8rem;
+    background-color: #d9d9d9;
+    border-radius: 15px;
+}
+
+.card-info-user .percentage div.percentage0 {
+    width: 60%;
+    padding: 0.4rem 0;
+    background-color: #7cb3ff;
+    border-radius: 15px;
+}
+
+span.note-percentage {
+    font-size: 80%;
+    color: #000000b0;
+    font-weight: bb;
+}
+
+#v-pills-tabContent .title {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+
+/* thông tin người dùng */
+
+#v-pills-info-user {}

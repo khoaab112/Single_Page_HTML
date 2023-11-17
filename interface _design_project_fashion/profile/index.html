@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://kit.fontawesome.com/a52b7e02a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="mt-5"></div>
+        <div class="active-mb"><input type="checkbox" class="btn-change-mobile" id="btn-active"><i class="fa-solid fa-bars icon"></i></div>
+        <div class="container">
+            <div class="d-flex align-items-start">
+                <div class="nav flex-column nav-pills  list-btn" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="card-info-user text-center">
+                        <div class="avatar-user"> <img src="../imgs/xinh_2.jpg" alt=""></div>
+                        <strong class="name">
+                            Nguyễn Lan Anh
+                        </strong>
+                        <div class="img-rank"><img src="../imgs/promotional-products.jpg" alt=""></div>
+                        <strong class="rank-name">Vàng</strong>
+                        <div class="percentage">
+                            <div class="percentage100">
+                                <div class="percentage0"></div>
+                            </div>
+                            <strong>60%</strong>
+                        </div>
+                        <span class="note-percentage">Bạn cần 190 điểm nữa để nên hạng</span>
+                    </div>
+                    <hr class="hr-user">
+                    <button class="nav-link active" id="v-pills-info-user-tab" data-bs-toggle="pill" data-bs-target="#v-pills-info-user" type="button" role="tab" aria-controls="v-pills-info-user" aria-selected="true">Thông tin</button>
+                    <button class="nav-link" id="v-pills-change-password-tab" data-bs-toggle="pill" data-bs-target="#v-pills-change-password" type="button" role="tab" aria-controls="v-pills-change-password" aria-selected="false">Đổi mật khẩu</button>
+                    <button class="nav-link" id="v-pills-order-tab" data-bs-toggle="pill" data-bs-target="#v-pills-order" type="button" role="tab" aria-controls="v-pills-order" aria-selected="false">Đơn hàng</button>
+                    <button class="nav-link" id="v-pills-basket-tab" data-bs-toggle="pill" data-bs-target="#v-pills-basket" type="button" role="tab" aria-controls="v-pills-basket" aria-selected="false">Giỏ hàng</button>
+                    <button class="nav-link" id="v-pills-discount-code-tab" data-bs-toggle="pill" data-bs-target="#v-pills-discount-code" type="button" role="tab" aria-controls="v-pills-discount-code" aria-selected="false">Mã giảm giá</button>
+                    <button class="nav-link" id="v-pills-preferred-item-tab" data-bs-toggle="pill" data-bs-target="#v-pills-preferred-item" type="button" role="tab" aria-controls="v-pills-preferred-item" aria-selected="false">Yêu thích</button>
+                    <button class="nav-link" id="v-pills-track-order-tab" data-bs-toggle="pill" data-bs-target="#v-pills-track-order" type="button" role="tab" aria-controls="v-pills-track-order" aria-selected="false">Tra soát-khiếu nại về đơn hàng</button>
+                    <button class="nav-link" id="v-pills-purchase-history-tab" data-bs-toggle="pill" data-bs-target="#v-pills-purchase-history" type="button" role="tab" aria-controls="v-pills-purchase-history" aria-selected="false">Lịch sử mua hàng</button>
+                    <button class="nav-link" id="v-pills-canceled-order-tab" data-bs-toggle="pill" data-bs-target="#v-pills-canceled-order" type="button" role="tab" aria-controls="v-pills-canceled-order" aria-selected="false">Đơn hãng hủy</button>
+                </div>
+                <div class="tab-content" id="v-pills-tabContent">
+                    <!-- thông tin người dùng -->
+                    <div class="tab-pane fade  show active" id="v-pills-info-user" role="tabpanel" aria-labelledby="v-pills-info-user-tab">
+                    </div>
+                    <!-- đổi mật khẩu -->
+                    <div class="tab-pane fade" id="v-pills-change-password" role="tabpanel" aria-labelledby="v-pills-change-password-tab">
+                    </div>
+                    <!-- đặt hàng -->
+                    <div class="tab-pane fade" id="v-pills-order" role="tabpanel" aria-labelledby="v-pills-order-tab">
+                    </div>
+                    <!--Giỏ hàng  -->
+                    <div class="tab-pane fade" id="v-pills-basket" role="tabpanel" aria-labelledby="v-pills-basket-tab">
+                    </div>
+                    <!--Mã giảm giá  -->
+                    <div class="tab-pane fade" id="v-pills-discount-code" role="tabpanel" aria-labelledby="v-pills-discount-code">
+                    </div>
+                    <!-- Yêu thích -->
+                    <div class="tab-pane fade" id="v-pills-preferred-item" role="tabpanel" aria-labelledby="v-pills-preferred-item">
+                    </div>
+                    <!-- Kiểm tra -->
+                    <div class="tab-pane fade" id="v-pills-track-order" role="tabpanel" aria-labelledby="v-pills-track-order">
+                    </div>
+                    <!-- Lịch sử -->
+                    <div class="tab-pane fade" id="v-pills-purchase-history" role="tabpanel" aria-labelledby="v-pills-purchase-history">
+                    </div>
+                    <!-- Đơn đã hủy -->
+                    <div class="tab-pane fade" id="v-pills-canceled-order" role="tabpanel" aria-labelledby="v-pills-canceled-order">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+
+</html>
