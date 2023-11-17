@@ -27,7 +27,7 @@
                     <button class="nav-link" id="v-pills-facebook-tab" data-bs-toggle="pill" data-bs-target="#v-pills-facebook" type="button" role="tab" aria-controls="v-pills-facebook" aria-selected="false">FaceBook</button>
                 </div>
                 <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-online" role="tabpanel" aria-labelledby="v-pills-online-tab">
+                    <div class="tab-pane fade  show active" id="v-pills-online" role="tabpanel" aria-labelledby="v-pills-online-tab">
                         <div class="frm-connect">
                             <input type="text" placeholder="Nhập tên"> <button class="connect">Kết nối</button>
                         </div>
@@ -94,10 +94,68 @@
 
                     </div>
                     <!--  -->
-                    <div class="tab-pane fade" id="v-pills-phone-number" role="tabpanel" aria-labelledby="v-pills-phone-number-tab">...</div>
-                    <div class="tab-pane fade" id="v-pills-mail" role="tabpanel" aria-labelledby="v-pills-mail-tab">...</div>
-                    <div class="tab-pane fade" id="v-pills-zalo" role="tabpanel" aria-labelledby="v-pills-zalo-tab">...</div>
-                    <div class="tab-pane fade" id="v-pills-facebook" role="tabpanel" aria-labelledby="v-pills-zalo-facebook">...</div>
+
+                    <!-- số điện thoại -->
+                    <div class="tab-pane fade" id="v-pills-phone-number" role="tabpanel" aria-labelledby="v-pills-phone-number-tab">
+                        <div class="call">
+                            <div class="title">Bạn có thể liên hệ trức tiếp tới số điện thoại</div>
+                            <div class="form-number">
+                                <form action="">
+                                    <input type="text" name="phone-number" id="" class="phone-number" value="089.4555.777" disabled>
+                                    <button>Gọi</button>
+                                </form>
+                            </div>
+                        </div>
+                        <br/>
+                        <strong class="or">Hoặc</strong>
+                        <br/>
+                        <div class="send-information">
+                            <div class="title">Để lại thông tin chúng tôi sẽ liên hệ cho bạn</div>
+                            <form action="" class="frm-input-info">
+                                <div class="name">
+                                    <label for="input-name">Họ và tên :<input type="text" name="input-name" id="input-name" placeholder="Nhập họ và tên"></label>
+                                    <label for="input-date-birth">Ngày sinh :<input type="date" name="input-date-birth" id="input-date-birth" placeholder="Ngày sinh"></label>
+                                    <label for="input-phone-number">Số điện thoại :<input type="number" name="input-phone-number" id="input-phone-number" placeholder="Số điện thoại"></label>
+                                    <label for="input-content">Nội dung : <textarea rows="4" cols="35"></textarea> </label>
+                                </div>
+                                <button>Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <!-- mail -->
+                    <div class="tab-pane fade" id="v-pills-mail" role="tabpanel" aria-labelledby="v-pills-mail-tab">
+                        <div class="title">Mail tiếp nhận</div>
+                        <div class="receiving-mail">
+                            hotro@shop.com
+                        </div>
+                        <form action="" id="frm-mail">
+                            <div class="info">
+                                <input type="text" name="mail-name" id="mail-name" placeholder="Nhập tên của bạn">
+                                <input type="text" name="mail" id="mail" placeholder="Nhập mail của bạn">
+                            </div>
+                            <div class="content">
+                                <textarea name="" id="" cols="30" rows="8" placeholder="Nội dung"></textarea>
+                            </div>
+                            <button>Gửi</button>
+                        </form>
+
+                    </div>
+                    <!-- end -->
+                    <!-- zalo -->
+                    <div class="tab-pane fade" id="v-pills-zalo" role="tabpanel" aria-labelledby="v-pills-zalo-tab">
+                        <div class="title">Zalo</div>
+                        <div class="link"><strong> https://zalo.me/g/ikrdls826</strong><span><i class="fa-solid fa-up-right-from-square"></i></span></div>
+                        <div class="content">
+
+                        </div>
+
+                    </div>
+                    <!-- end -->
+                    <div class="tab-pane fade" id="v-pills-facebook" role="tabpanel" aria-labelledby="v-pills-zalo-facebook">
+                        <div class="title">FaceBook</div>
+                        <div class="link"><strong> https://zalo.me/g/ikrdls826</strong><span><i class="fa-solid fa-up-right-from-square"></i></span></div>
+                    </div>
                 </div>
             </div>
         </div>

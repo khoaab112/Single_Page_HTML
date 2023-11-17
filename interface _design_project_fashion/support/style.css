@@ -1,4 +1,20 @@
     /* mobile */
+    /* chung */
+    
+    button:hover {
+        box-shadow: 1px 6px 13px -5px;
+        transform: scale(1.01);
+    }
+    
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
     
     button.btn-change-mobile {
         display: none;
@@ -256,6 +272,10 @@
         }
     }
     
+    .active-mb {
+        display: none;
+    }
+    
     @media(max-width: 700px) {
         input.btn-change-mobile {
             border: none;
@@ -309,4 +329,157 @@
         #v-pills-online .messaging-frame .input-message button {
             width: 3rem;
         }
+        #v-pills-phone-number .send-information .name {
+            padding: 0 !important;
+            background: none !important;
+        }
+        .frm-input-info {
+            padding: 0px 16px;
+            background: white;
+        }
+    }
+    /* v-pills-phone-number */
+    
+    #v-pills-phone-number .title {
+        font-weight: bold;
+        font-size: 110%;
+    }
+    
+    #v-pills-phone-number input {
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 3px 10px;
+        margin-top: 1rem;
+    }
+    
+    #v-pills-phone-number label {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    #v-pills-phone-number .form-number button {
+        border: none;
+        padding: 4px 14px;
+        margin-left: 1rem;
+        border-radius: 5px;
+        background: #ffc107;
+        color: white;
+    }
+    
+    #v-pills-phone-number strong.or {
+        margin-top: 1rem;
+        color: red;
+    }
+    
+    #v-pills-phone-number .send-information .title {
+        margin-top: 1rem;
+    }
+    
+    #v-pills-phone-number .send-information .name {
+        padding: 40px 11rem;
+        background: white;
+    }
+    
+    #v-pills-phone-number .send-information textarea {
+        margin-top: 1rem;
+        outline: none;
+        padding: 5px;
+    }
+    
+    #v-pills-phone-number .send-information button {
+        border: none;
+        padding: 4px 14px;
+        margin-left: 1rem;
+        border-radius: 5px;
+        background: #0d6efd;
+        color: white;
+        float: right;
+        margin-top: 1rem;
+    }
+    /* v-pills-mail */
+    
+    #v-pills-mail .title {
+        font-weight: bold;
+        font-size: 110%;
+    }
+    
+    #v-pills-mail .receiving-mail {
+        font-weight: bold;
+        background-color: white;
+        width: 30%;
+        padding: 5px 0 5px 34px;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+    
+    #v-pills-mail #frm-mail {
+        background-color: white;
+        padding: 2rem 1rem 2rem 1rem;
+        text-align: end;
+    }
+    
+    #v-pills-mail .info {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #v-pills-mail .info input {
+        width: 40%;
+    }
+    
+    #v-pills-mail #frm-mail input {
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 5px 1rem;
+    }
+    
+    #v-pills-mail #frm-mail textarea {
+        margin-top: 1rem;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 5px 1rem;
+    }
+    
+    #v-pills-mail #frm-mail button {
+        border: none;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        background: #0d6efd;
+    }
+    /* zalo */
+    
+    #v-pills-zalo .title,
+    #v-pills-facebook .title {
+        font-weight: bold;
+        font-size: 110%;
+    }
+    
+    #v-pills-zalo .link,
+    #v-pills-facebook .link {
+        font-weight: bold;
+        background-color: white;
+        width: 40%;
+        padding: 5px 0 5px 34px;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #v-pills-zalo .link span:hover,
+    #v-pills-facebook .link span:hover {
+        color: #0d6efd;
+    }
+    
+    #v-pills-zalo .content,
+    #v-pills-facebook .content {
+        width: 100%;
+        height: 20rem;
+        background-color: #6c757d;
     }
