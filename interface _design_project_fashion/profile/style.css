@@ -817,5 +817,55 @@ button.remove-item {
     border-bottom: 1px solid black;
 }
 
+@media (max-width:700px) {
+    #list-code th:nth-child(2) {
+        width: 8rem;
+        height: 9rem;
+    }
+    #list-code th:last-child button {
+        padding: 0px 9px;
+    }
+}
+
 
 /* end */
+
+
+/* Lịch sử */
+
+section#history-buy .list-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section#history-buy .list-box .box {
+    width: 11rem;
+    height: 6rem;
+    background: red;
+    color: white;
+    font-size: 110%;
+    display: flex;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section#history-buy .list-box .box:first-child {
+    background-color: #7cb3ff;
+}
+
+section#history-buy .list-box .box:nth-child(2) {
+    background-color: #198754;
+}
+
+section#history-buy .list-box .box:nth-child(3) {
+    background-color: #0dcaf0;
+}
+
+section#history-buy .list-box .box:last-child {
+    background-color: #6c757d;
+}
