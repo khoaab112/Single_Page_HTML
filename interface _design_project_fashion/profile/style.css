@@ -42,48 +42,6 @@ button.btn-change-mobile {
     width: 100%;
 }
 
-@media(max-width: 700px) {
-    input.btn-change-mobile {
-        border: none;
-        width: 3rem;
-        height: 2rem;
-        display: block;
-        z-index: 2;
-        opacity: 0;
-    }
-    .active-mb {
-        width: 3rem;
-        height: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .active-mb .icon {
-        position: absolute;
-    }
-    .list-btn {
-        min-height: 36pc;
-    }
-    #v-pills-tab {
-        position: absolute;
-        width: 100pc;
-        top: 8rem;
-        box-shadow: 0 0 10px #85888C;
-        margin: -50px 0 0 -50px;
-        padding: 10px;
-        padding-top: 0px;
-        background-color: #F5F6FA;
-        -webkit-font-smoothing: antialiased;
-        transform-origin: 0% 0%;
-        transform: translate(-100%, 0);
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-        z-index: 1;
-    }
-    .show-tap {
-        transform: none !important;
-    }
-}
-
 
 /*  css riêng */
 
@@ -499,7 +457,7 @@ section#order-confirmation button {
 }
 
 #order-confirmation th:nth-child(2) {
-    max-width: 3rem;
+    width: 10rem;
     height: 11rem;
 }
 
@@ -510,10 +468,11 @@ section#order-confirmation button {
 
 #order-confirmation th:nth-child(4) {
     /* display: block; */
+    max-width: 4rem;
 }
 
 #order-confirmation th:last-child {
-    max-width: 2rem;
+    min-width: 3rem;
     text-align: center;
 }
 
@@ -528,9 +487,8 @@ section#order-confirmation button {
 }
 
 #order-confirmation .price {
-    width: 33%;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
 }
 
 #order-confirmation .price del {
@@ -578,4 +536,191 @@ section#order-confirmation button {
 .actual-payment.mt-2 strong:last-child {
     color: red;
     font-size: 110%;
+}
+
+button.remove-item {
+    float: right;
+    background: red !important;
+    color: white;
+}
+
+.payment-methods select {
+    width: 50%;
+}
+
+.payment-methods .note {
+    font-size: 80%;
+    color: #85888C;
+}
+
+.payment-methods button.registered-address {
+    background-color: red !important;
+    color: white;
+    width: 7rem !important;
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.delivery-time {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.delivery-time strong {
+    background-color: #ffc107;
+    border-radius: 5px;
+}
+
+.use-code>div {
+    display: flex;
+    align-items: center;
+}
+
+.use-code>div>strong {
+    padding-right: 2rem;
+}
+
+.use-code>div input {
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ced4da;
+    padding: 5px 10px 5px 10px;
+    width: 17rem;
+}
+
+.use-code>div>div {
+    position: relative;
+}
+
+.use-code>div>div>button {
+    position: absolute;
+    right: 40px;
+    top: 1px;
+    border-radius: 0px 5px 5px 0px!important;
+    background: #6c757d !important;
+    color: white !important;
+    width: 4rem !important;
+    height: 2.1rem;
+}
+
+.use-code .list-gifcode {
+    display: block;
+}
+
+.use-code .list-gifcode .item,
+.use-code .list-gifcode .total-x {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.use-code .list-gifcode .item .code {
+    color: red;
+}
+
+.use-code .list-gifcode hr {
+    width: 70%;
+}
+
+#v-pills-basket .list-action {
+    float: right;
+}
+
+#v-pills-basket .list-action button {
+    width: 6rem !important;
+    height: 3rem;
+    margin-right: 3rem;
+}
+
+#v-pills-basket .list-action button.comfirm {
+    background-color: #0d6efd;
+    color: white;
+}
+
+#v-pills-basket .list-action button.cancel {
+    background-color: yellow;
+}
+
+@media(max-width: 700px) {
+    input.btn-change-mobile {
+        border: none;
+        width: 3rem;
+        height: 2rem;
+        display: block;
+        z-index: 2;
+        opacity: 0;
+    }
+    .active-mb {
+        width: 3rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .active-mb .icon {
+        position: absolute;
+    }
+    .list-btn {
+        min-height: 36pc;
+    }
+    #v-pills-tab {
+        position: absolute;
+        width: 100pc;
+        top: 8rem;
+        box-shadow: 0 0 10px #85888C;
+        margin: -50px 0 0 -50px;
+        padding: 10px;
+        padding-top: 0px;
+        background-color: #F5F6FA;
+        -webkit-font-smoothing: antialiased;
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+        z-index: 1;
+    }
+    .show-tap {
+        transform: none !important;
+    }
+    #order-confirmation th:nth-child(3) {
+        font-size: 14px;
+    }
+    #order-confirmation .number button {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    #order-confirmation .number {
+        width: 4.5rem;
+    }
+    #order-confirmation table {
+        font-size: 14px;
+    }
+    #order-confirmation th:nth-child(2) {
+        width: 8rem;
+        height: 9rem;
+    }
+    #order-confirmation .price {
+        align-items: flex-end;
+    }
+    .delivery-time {
+        align-items: center;
+    }
+    .use-code>div>div>button {
+        right: 0px;
+    }
+    .use-code .icon-wallet {
+        float: right;
+        margin-top: 3rem;
+        display: block;
+    }
+    .use-code>div {
+        flex-wrap: wrap;
+    }
+    #v-pills-basket .list-action {
+        margin-top: 1rem;
+    }
+    .payment-methods select {
+        width: 100%;
+    }
 }
